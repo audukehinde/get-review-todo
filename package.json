@@ -1,0 +1,37 @@
+{
+  "name": "html-css-js-template",
+  "version": "1.0.0",
+  "description": "HTML,CSS & JS template for Microverse. All linters and readme file included.",
+  "private": true,
+  "scripts": {
+    "linters": "npx hint . && npm run run-stylelint && npx eslint .",
+    "run-stylelint": "stylelint \"**/*.css\"",
+    "build": "webpack",
+    "start": "webpack serve --open"
+  },
+  "keywords": [
+    "Microverse"
+  ],
+  "author": "oyhpnayiaw@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "10.x",
+    "css-loader": "^6.7.3",
+    "eslint": "7.x",
+    "eslint-config-airbnb-base": "14.x",
+    "eslint-plugin-import": "2.x",
+    "hint": "7.x",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "stylelint": "13.x",
+    "stylelint-config-standard": "21.x",
+    "stylelint-csstree-validator": "1.x",
+    "stylelint-scss": "3.x",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
